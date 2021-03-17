@@ -1,0 +1,28 @@
+service: lambda-warmer
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "lambda:InvokeFunction"
+      Resource: "arn:aws:lambda:us-east-1:*"
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - httpApi:
+          path: /hello
+          method: get
+      - schedule:
+          name: warmer-schedule-name
+          rate: rate(5 minutes)
+          enabled: true
+          input:
+            warmer: true
+            concurrency: 1
