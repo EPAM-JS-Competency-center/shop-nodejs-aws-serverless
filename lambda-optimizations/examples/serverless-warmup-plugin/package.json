@@ -1,0 +1,14 @@
+{
+  "name": "serverless-warmup-plugin-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless-plugin-warmup": "^5.2.1"
+  }
+}
