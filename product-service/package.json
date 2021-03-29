@@ -1,0 +1,36 @@
+{
+  "name": "product-service",
+  "version": "1.0.0",
+  "description": "Serverless webpack example using Typescript",
+  "main": "handler.js",
+  "scripts": {
+    "package-build": "sls package",
+    "deploy:dev": "sls deploy --stage dev",
+    "deploy:prod": "sls deploy --stage prod",
+    "remove:dev-stack": "sls remove --stage dev --region us-east-1",
+    "remove:prod-stack": "sls remove --stage prod --region us-east-1"
+  },
+  "dependencies": {
+    "inversify": "^5.0.5",
+    "pg": "^8.5.1",
+    "reflect-metadata": "^0.1.13",
+    "source-map-support": "^0.5.10",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.17",
+    "@types/node": "^10.17.54",
+    "@types/pg": "^7.14.9",
+    "@types/serverless": "^1.72.5",
+    "fork-ts-checker-webpack-plugin": "^3.0.1",
+    "serverless-offline": "^6.8.0",
+    "serverless-webpack": "^5.2.0",
+    "ts-loader": "^5.3.3",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.2.4",
+    "webpack": "^4.29.0",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "author": "The serverless webpack authors (https://github.com/elastic-coders/serverless-webpack)",
+  "license": "MIT"
+}
