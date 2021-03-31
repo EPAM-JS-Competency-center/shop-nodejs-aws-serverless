@@ -1,7 +1,3 @@
-import { diContainer } from "../di/inversify.config";
-import { LoggerInterface } from "../logger/logger.interface";
-import { TYPES } from "../types";
-
 interface responseInterface {
     statusCode: number
     headers: Object,
@@ -14,10 +10,8 @@ const defaultHeaders = {
     'Access-Control-Allow-Origin': '*'
 };
 
-const loggerInstance = diContainer.get<LoggerInterface>(TYPES.LOGGER);
-
 const errorResponse = ( err: Error, statusCode: number = 500 ): responseInterface => {
-    loggerInstance.logError(
+    console.log(
         `Error: ${ err.message  }`
     );
 
@@ -31,7 +25,7 @@ const errorResponse = ( err: Error, statusCode: number = 500 ): responseInterfac
 }
 
 const successResponse = ( body: Object, statusCode: number = 200 ): responseInterface => {
-    loggerInstance.logServiceRequest(
+    console.log(
         `Lambda successfully invoked and finished`
     );
 

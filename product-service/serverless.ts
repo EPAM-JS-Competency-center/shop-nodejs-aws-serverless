@@ -2,20 +2,16 @@ import type { Serverless } from 'serverless/aws';
 
 const serverlessConfiguration: Serverless = {
   service: {
-    name: 'product-service-2'
+    name: 'product-service'
   },
   frameworkVersion: '2',
   custom: {
     webpack: {
       webpackConfig: './webpack.config.js',
       includeModules: true
-    },
-    "serverless-offline": {
-      httpPort: 4000,
-      lambdaPort: 4001
     }
   },
-  plugins: [ 'serverless-webpack', 'serverless-offline' ],
+  plugins: [ 'serverless-webpack' ],
   provider: {
     name: 'aws',
     runtime: 'nodejs12.x',
@@ -31,9 +27,6 @@ const serverlessConfiguration: Serverless = {
       AWS_NODEJS_CONNECTION_REUSE_ENABLED: '10',
       ENV_STAGE: '${opt:stage}'
     },
-  },
-  package: {
-    include: [ '../libs/*' ]
   },
   functions: {
     getProductById: {
