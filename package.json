@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/EPAM-JS-Competency-center/shop-nodejs-aws-serverless#readme",
   "dependencies": {
+    "@types/node": "^14.14.37",
     "inversify": "^5.0.5",
     "pg": "^8.5.1",
     "winston": "^3.3.3"

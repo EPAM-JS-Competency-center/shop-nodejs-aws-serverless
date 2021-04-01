@@ -2,7 +2,7 @@ import type { Serverless } from 'serverless/aws';
 
 const serverlessConfiguration: Serverless = {
   service: {
-    name: 'product-service'
+    name: 'product-service22'
   },
   frameworkVersion: '2',
   custom: {
@@ -67,4 +67,4 @@ const serverlessConfiguration: Serverless = {
   }
 }
 
-export default serverlessConfiguration;
+module.exports = serverlessConfiguration;

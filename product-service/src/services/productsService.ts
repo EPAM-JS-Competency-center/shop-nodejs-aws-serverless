@@ -1,4 +1,5 @@
 import products from "./products.json";
+import { winstonLogger } from "../utils/winstonLogger";
 
 interface ProductInterface {
     id?: string,
@@ -20,7 +21,8 @@ class ProductsService implements ProductsServiceInterface {
             return products.find( product => product.id === id );
         }
         catch( error ) {
-            console.log( `Method ProductsModel::getProductById. Error: ${ error }` );
+            winstonLogger.logError( `Method ProductsModel::getProductById. Incorrect id: ${ id }` );
+            winstonLogger.logError( `Error message: ${ error }` );
         }
     }
 
@@ -29,7 +31,8 @@ class ProductsService implements ProductsServiceInterface {
             return products;
         } 
         catch (error) {
-            console.log( `Method ProductsModel::getAllProducts. Error: ${ error }` );
+            winstonLogger.logError( `Method ProductsModel::getAllProducts.` );
+            winstonLogger.logError( `Error message: ${ error }` );
         }
     }
 }

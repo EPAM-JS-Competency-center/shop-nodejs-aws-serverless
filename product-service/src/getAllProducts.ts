@@ -1,14 +1,16 @@
 import { ProductsService, ProductInterface } from "./services/productsService";
+import { winstonLogger } from "./utils/winstonLogger";
 import { errorResponse, successResponse, responseInterface } from "./utils/apiResponseBuilder";
 
 export const getAllProducts: ( event, _context ) => Promise<responseInterface> = async (event, _context) => {
     try {
-        console.log("Incoming event: ...")
-        const productsService = new ProductsService();
+        winstonLogger.logRequest(`Incoming event: ${ JSON.stringify( event ) }`);
 
+        const productsService = new ProductsService();
         const products: ProductInterface[] = await productsService.getAllProducts();
 
-        console.log("Received products ...")
+        winstonLogger.logRequest(`"Received products: ${ JSON.stringify( products ) }`);
+
         return successResponse( products );
     } 
     catch (err) {

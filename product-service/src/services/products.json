@@ -1,66 +1,66 @@
 [
   {
     "count": 4,
-    "description": "Улучшение проекта существующего кода» пролили свет на процесс рефакторинга, описав принципы и лучшие приёмы его осуществления.",
+    "description": "Improving the Design of Existing Code ”shed light on the refactoring process, describing the principles and best practices for its implementation.",
     "id": "7567ec4b-b10c-48c5-9345-fc73c48a80aa",
     "price": 2.4,
-    "title": "Рефакторинг от М.Фаулера",
+    "title": "Refactoring by M. Fowler",
     "logo": "https://r5.readrate.com/img/pictures/basic/792/792600/7926007/w800h317-76be96b9.jpg"
   },
   {
     "count": 6,
-    "description": "«Программист-прагматик. Путь от подмастерья к мастеру» расскажет всё, что нужно знать человеку, начинающему свой путь в сфере IT-проектов. Почти культовая книга. Вы узнаете, как бороться с недостатками ПО, как создать диамичную, эффективую и адаптируемую программу, как сформировать успешную команду программистов.",
+    "description": "“Pragmatic programmer. The path from apprentice to master” will tell you everything a person needs to know, starting his way in the field of IT projects. Almost a cult book. You will learn how to deal with software shortcomings, how to create a dynamic, effective and adaptable program, how to form a successful team of programmers.",
     "id": "7567ec4b-b10c-48c5-9345-fc73c48a80a0",
     "price": 10,
-    "title": "Программист-прагматик. Путь от подмастерья к мастеру. Эндрю Хант, Дэвид Томас",
+    "title": "Pragmatic programmer. The path from apprentice to master. Andrew Hunt, David Thomas",
     "logo": "https://r2.readrate.com/img/pictures/basic/792/792600/7926008/w800h317-89405d1d.jpg"
   },
   {
     "count": 7,
-    "description": "«Совершенный код. Мастер-класс» – обновлённое издание проверенного временем бестселлера. Книга, которая заставляет размышлять и помогает создать идеальный код. Причём неважно, новичок вы или профи, в этом издании точно найдёте информацию для роста и работы над своим проектом. ",
+    "description": "Perfect code. Master-class - an updated edition of the time-tested bestseller. A book that makes you think and helps you create the perfect code. And it doesn't matter if you are a beginner or a pro, in this publication you will definitely find information for growth and work on your project.",
     "id": "7567ec4b-b10c-48c5-9345-fc73c48a80a2",
     "price": 23,
-    "title": "Совершенный код. Мастер-класс. Стив Макконнелл",
+    "title": "Perfect code. Master Class. Steve McConnell",
     "logo": "https://r5.readrate.com/img/pictures/basic/792/792600/7926009/w800h317-da60182f.jpg"
   },
   {
     "count": 12,
-    "description": "Книга «На пике. Как поддерживать максимальную эффективность без выгорания» особенно необходима программистам, которые привыкли с головой погружаться в работу, не следя за временем и растратой таких ресурсов, как силы и здоровье. ",
+    "description": "The book “At the peak. How to maintain maximum efficiency without burnout \"is especially necessary for programmers who are accustomed to plunge headlong into work, not keeping track of time and waste of resources such as strength and health. ",
     "id": "7567ec4b-b10c-48c5-9345-fc73c48a80a1",
     "price": 15,
-    "title": "На пике. Как поддерживать максимальную эффективность без выгорания. Брэд Сталберг, Стив Магнесс",
+    "title": "At the peak. How to maintain maximum efficiency without burnout. Brad Stahlberg, Steve Magness",
     "logo": "https://r2.readrate.com/img/pictures/basic/792/792601/7926010/w800h317-04d81319.jpg"
   },
   {
     "count": 7,
-    "description": "Эту книгу интересно читать и начинающему, и бывалому программисту. Авторы понятно и с юмором рассказывают о том, что программирование – это во многом коммуникация. Стиль программирования, именование, комментирование, работа с чужим кодом – зачастую соглашения складываются именно там, где строгая регламентация на уровне языка программи. ",
+    "description": "This book is interesting to read for both a beginner and an experienced programmer. The authors clearly and humorously talk about the fact that programming is in many ways communication. Programming style, naming, commenting, working with someone else's code - often agreements develop exactly where there is strict regulation at the programming language level.",
     "id": "7567ec4b-b10c-48c5-9345-fc73c48a80a2",
     "price": 23,
-    "title": "Программирование без дураков. Катрин Пассиг, Йоханнес Яндер",
+    "title": "Programming without fools. Katrin Passig, Johannes Jander",
     "logo": "https://r2.readrate.com/img/pictures/basic/792/792601/7926014/w800h317-a1bf3137.jpg"
   },
   {
     "count": 8,
-    "description": "Обновлённое юбилейное издание легендарной книги «Паттерны проектирования». Многие проблемы программирования имеют свойство повторяться и дублировать друг друга. Разработчики всего мира решают совершенно идентичные задачи и находят похожие решения. Если вы не хотите изобретать велосипед, используйте готовые шаблоны (паттерны) проектирования, работе с которыми посвящена эта книга.",
+    "description": "Updated anniversary edition of the legendary book \"Design Patterns\". Many programming problems tend to be repetitive and duplicative. Developers around the world are solving completely identical problems and finding similar solutions. If you don't want to reinvent the wheel, use the ready-made design patterns that this book is about to work with.",
     "id": "7567ec4b-b10c-48c5-9345-fc73348a80a1",
     "price": 15,
-    "title": "Head First. Паттерны проектирования. Эрик Фримен, Элизабет Фримен",
+    "title": "Head First. Design patterns. Eric Freeman, Elizabeth Freeman",
     "logo": "https://r5.readrate.com/img/pictures/basic/792/792601/7926015/w800h317-8f4d4f25.jpg"
   },
   {
     "count": 2,
-    "description": "Можете ли вы без особого труда изменить код и тут же получить ответную реакцию на внесённые изменения? Насколько понятен этот код? Если вы сталкиваетесь с унаследованным кодом, вам пригодится книга Майкла К. Физерса, посвящённая работе с ним. \n\nВ книге «Эффективная работа с унаследованным кодом» вы найдёте информацию о механизмах внесения изменений в программное обеспечение, переносе унаследованного кода в средства тестирования, о написании тестов, препятствующих внесению новых ошибок в код, о применении методов, подходящих для любого языка или платформы, с примерами кода на Java, C++, C и C#. Кроме того, вы узнаете, как точно выявить в коде места, где требуется внести изменения, и как работать с унаследованным кодом, который не является объектно-ориентированным, и многое другое.",
+    "description": "Can you easily change the code and get immediate feedback on the changes you make? How clear is this code? If you come across legacy code, Michael K. Feathers's book on working with it comes in handy.\n\nIn the book Effectively Working with Legacy Code, you will find information about mechanisms for making changes to software, porting legacy code to testing tools, writing tests that prevent new errors from being introduced into the code, and applying methods suitable for any language or platform. sample code in Java, C ++, C, and C #. In addition, you will learn how to pinpoint where changes need to be made in your code, how to work with legacy code that is not object-oriented, and much more.",
     "id": "7567ec4b-b10c-48c5-9445-fc73c48a80a2",
     "price": 23,
-    "title": "Эффективная работа с унаследованным кодом. Майкл К. Физерс",
+    "title": "Effective work with legacy code. Michael K. Feathers",
     "logo": "https://r2.readrate.com/img/pictures/basic/792/792600/7926006/w800h317-535b11eb.jpg"
   },
   {
     "count": 3,
-    "description": "Это издание – сборник полезных советов, многие из которых на собственном опыте можно сформулировать только после долгих лет работы в отрасли. Тут нет описания конкретных технологий, алгоритмов и языков программирования – ценность «Программиста-фанатика» не в этом. Книга расскажет, как победить отсутствие мотивации, выбрать правильные приоритеты, понять психологию программирования, наладить отношения с руководством и коллегами и т. д.",
+    "description": "This publication is a collection of useful tips, many of which can only be formulated on our own experience after many years of work in the industry. There is no description of specific technologies, algorithms and programming languages - this is not the value of the Fanatic Programmer. The book will tell you how to overcome lack of motivation, choose the right priorities, understand the psychology of programming, build relationships with management and colleagues, etc.",
     "id": "7567ec4b-b10c-45c5-9345-fc73c48a80a1",
     "price": 15,
-    "title": "Программист-фанатик. Чед Фаулер",
+    "title": "Fanatic programmer. Chad Fowler",
     "logo": "https://r5.readrate.com/img/pictures/basic/792/792601/7926011/w800h317-16272c40.jpg"
   }
 ]
