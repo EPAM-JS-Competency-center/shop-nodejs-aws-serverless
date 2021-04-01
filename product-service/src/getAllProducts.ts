@@ -7,7 +7,7 @@ export const getAllProducts: ( event, _context ) => Promise<responseInterface> =
         winstonLogger.logRequest(`Incoming event: ${ JSON.stringify( event ) }`);
 
         const productsService = new ProductsService();
-        const products: ProductInterface[] = await productsService.getAllProducts();
+        const products: ProductInterface[] = productsService.getAllProducts();
 
         winstonLogger.logRequest(`"Received products: ${ JSON.stringify( products ) }`);
 

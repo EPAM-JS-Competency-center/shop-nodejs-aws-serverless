@@ -9,7 +9,7 @@ export const getProductById: (event, _context) => Promise<responseInterface> = a
         const { productId = '' } = event.pathParameters;
         const productsService = new ProductsService();
 
-        const product: ProductInterface | undefined = await productsService.getProductById( productId );
+        const product: ProductInterface | undefined = productsService.getProductById( productId );
 
         winstonLogger.logRequest(`"Received product with id: ${ productId }: ${ JSON.stringify( product ) }`);
         
