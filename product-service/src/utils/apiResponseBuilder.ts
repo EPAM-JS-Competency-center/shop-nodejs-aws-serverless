@@ -1,3 +1,5 @@
+import {winstonLogger} from "./winstonLogger";
+
 interface responseInterface {
     statusCode: number
     headers: Object,
@@ -11,9 +13,7 @@ const defaultHeaders = {
 };
 
 const errorResponse = ( err: Error, statusCode: number = 500 ): responseInterface => {
-    console.log(
-        `Error: ${ err.message  }`
-    );
+    winstonLogger.logError( `Error: ${ err.message  }` );
 
     return {
         statusCode,
@@ -25,9 +25,7 @@ const errorResponse = ( err: Error, statusCode: number = 500 ): responseInterfac
 }
 
 const successResponse = ( body: Object, statusCode: number = 200 ): responseInterface => {
-    console.log(
-        `Lambda successfully invoked and finished`
-    );
+    winstonLogger.logRequest( `Lambda successfully invoked and finished` );
 
     return {
         statusCode,
