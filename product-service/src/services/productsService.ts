@@ -1,4 +1,4 @@
-import products from "../../products.json";
+import products from "./products.json";
 
 interface ProductInterface {
     id?: string,

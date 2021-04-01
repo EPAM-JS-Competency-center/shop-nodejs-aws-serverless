@@ -1,5 +1,5 @@
-import { ProductsService, ProductInterface } from "../../libs/services/products.service";
-import { errorResponse, successResponse, responseInterface } from "../../libs/response-helpers";
+import { ProductsService, ProductInterface } from "./services/productsService";
+import { errorResponse, successResponse, responseInterface } from "./utils/apiResponseBuilder";
 
 export const getProductById: (event, _context) => Promise<responseInterface> = async (event, _context) => {
     try {
