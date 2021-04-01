@@ -1,4 +1,4 @@
-import { ProductsService, ProductInterface } from "./services/productsService";
+import { getProductById as getProductByIdService, ProductInterface } from "./services/products";
 import { winstonLogger } from "./utils/winstonLogger";
 import { errorResponse, successResponse, responseInterface } from "./utils/apiResponseBuilder";
 
@@ -7,9 +7,8 @@ export const getProductById: (event, _context) => Promise<responseInterface> = a
         winstonLogger.logRequest(`Incoming event: ${ JSON.stringify( event ) }`);
 
         const { productId = '' } = event.pathParameters;
-        const productsService = new ProductsService();
 
-        const product: ProductInterface | undefined = productsService.getProductById( productId );
+        const product: ProductInterface | undefined = getProductByIdService( productId );
 
         winstonLogger.logRequest(`"Received product with id: ${ productId }: ${ JSON.stringify( product ) }`);
         
