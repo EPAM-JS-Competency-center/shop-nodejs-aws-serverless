@@ -2,12 +2,12 @@ import products from "./products.json";
 import { winstonLogger } from "../utils/winstonLogger";
 
 interface ProductInterface {
-    id?: string,
+    id: string,
     title: string,
     description: string,
     price: number,
     logo: string,
-    count?: number
+    count: number
 }
 
 interface ProductsServiceInterface {
