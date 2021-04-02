@@ -1,6 +1,6 @@
 import {winstonLogger} from "./winstonLogger";
 
-interface responseInterface {
+interface ResponseInterface {
     statusCode: number
     headers: Object,
     body: Object
@@ -12,7 +12,7 @@ const defaultHeaders = {
     'Access-Control-Allow-Origin': '*'
 };
 
-const errorResponse = ( err: Error, statusCode: number = 500 ): responseInterface => {
+const errorResponse = ( err: Error, statusCode: number = 500 ): ResponseInterface => {
     winstonLogger.logError( `Error: ${ err.message  }` );
 
     return {
@@ -24,7 +24,7 @@ const errorResponse = ( err: Error, statusCode: number = 500 ): responseInterfac
     }
 }
 
-const successResponse = ( body: Object, statusCode: number = 200 ): responseInterface => {
+const successResponse = ( body: Object, statusCode: number = 200 ): ResponseInterface => {
     winstonLogger.logRequest( `Lambda successfully invoked and finished` );
 
     return {
@@ -36,4 +36,4 @@ const successResponse = ( body: Object, statusCode: number = 200 ): responseInte
     }
 }
 
-export { errorResponse, successResponse, responseInterface };
+export { errorResponse, successResponse, ResponseInterface };
