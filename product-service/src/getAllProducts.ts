@@ -1,4 +1,4 @@
-import { getAllProducts as getAllProductsService, ProductInterface } from "./services/products";
+import { getAllProducts as getAllProductsService } from "./services/products";
 import { winstonLogger } from "./utils/winstonLogger";
 import { errorResponse, successResponse, responseInterface } from "./utils/apiResponseBuilder";
 

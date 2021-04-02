@@ -1,4 +1,4 @@
-import { getProductById as getProductByIdService, ProductInterface } from "./services/products";
+import { getProductById as getProductByIdService } from "./services/products";
 import { winstonLogger } from "./utils/winstonLogger";
 import { errorResponse, successResponse, responseInterface } from "./utils/apiResponseBuilder";
 
