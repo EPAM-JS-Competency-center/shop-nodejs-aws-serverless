@@ -6,7 +6,7 @@ export const getAllProducts: ( event, _context ) => Promise<responseInterface> =
     try {
         winstonLogger.logRequest(`Incoming event: ${ JSON.stringify( event ) }`);
 
-        const products: ProductInterface[] = getAllProductsService();
+        const products = getAllProductsService();
 
         winstonLogger.logRequest(`"Received products: ${ JSON.stringify( products ) }`);
 
