@@ -8,7 +8,7 @@ export const getProductById: (event, _context) => Promise<responseInterface> = a
 
         const { productId = '' } = event.pathParameters;
 
-        const product: ProductInterface | undefined = getProductByIdService( productId );
+        const product = getProductByIdService( productId );
 
         winstonLogger.logRequest(`"Received product with id: ${ productId }: ${ JSON.stringify( product ) }`);
         
