@@ -1,4 +1,4 @@
-import { getProductById as getProductByIdService } from "./services/products";
+import { InMemoryProductService } from "./services/in-memory-product-service";
 import { winstonLogger } from "./utils/winstonLogger";
 import { errorResponse, successResponse, ResponseInterface } from "./utils/apiResponseBuilder";
 
@@ -8,7 +8,9 @@ export const getProductById: (event, _context) => Promise<ResponseInterface> = a
 
         const { productId = '' } = event.pathParameters;
 
-        const product = getProductByIdService( productId );
+        const inMemoryProductService = new InMemoryProductService();
+
+        const product = inMemoryProductService.getProductById( productId );
 
         winstonLogger.logRequest(`"Received product with id: ${ productId }: ${ JSON.stringify( product ) }`);
         

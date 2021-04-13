@@ -1,4 +1,4 @@
-import { getAllProducts as getAllProductsService } from "./services/products";
+import { InMemoryProductService } from "./services/in-memory-product-service";
 import { winstonLogger } from "./utils/winstonLogger";
 import { errorResponse, successResponse, ResponseInterface } from "./utils/apiResponseBuilder";
 
@@ -6,7 +6,9 @@ export const getAllProducts: ( event, _context ) => Promise<ResponseInterface> =
     try {
         winstonLogger.logRequest(`Incoming event: ${ JSON.stringify( event ) }`);
 
-        const products = getAllProductsService();
+        const inMemoryProductService = new InMemoryProductService();
+
+        const products = await inMemoryProductService.getAllProducts();
 
         winstonLogger.logRequest(`"Received products: ${ JSON.stringify( products ) }`);
 
