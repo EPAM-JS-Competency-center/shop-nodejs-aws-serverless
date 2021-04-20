@@ -1,13 +1,14 @@
-import products from "./products.json";
-
 export interface ProductInterface {
     id: string,
     title: string,
     description: string,
     price: number,
     logo: string,
-    count: number
+    count: number,
 }
 
-export const getProductById = ( id: string ): ProductInterface => products.find( product => product.id === id );
-export const getAllProducts = (): ProductInterface[] => products;
+export interface ProductServiceInterface {
+    getProductById: (id: string) => Promise<ProductInterface>,
+    getAllProducts: () => Promise<ProductInterface[]>,
+    create: (product: Pick<ProductInterface, 'title' | 'description' | 'price' | 'logo' | 'count'>) => Promise<ProductInterface>,
+}
