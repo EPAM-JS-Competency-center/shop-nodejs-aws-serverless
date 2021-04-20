@@ -1,4 +1,14 @@
 import * as handlers from './src';
+import { Client } from 'pg';
+import { PostgresProductService } from './src/services/postgres-memory-product-service';
 
-export const getProductById = handlers.getProductById;
-export const getAllProducts = handlers.getAllProducts;
+console.log(process.env);
+
+const databaseClient = new Client();
+databaseClient.connect();
+const productService = new PostgresProductService(databaseClient)
+
+export const getProductById = handlers.getProductByIdHandler(productService);
+export const getAllProducts = handlers.getAllProductsHandler(productService);
+export const createProduct = handlers.createProductHandler(productService);
+export const migrateSchema = handlers.migrateSchema(databaseClient);

@@ -1,13 +1,19 @@
 service: product-service
 frameworkVersion: '2'
+variablesResolutionMode: 20210219
 
 provider:
   name: aws
   runtime: nodejs12.x
-  stage: '${opt:stage}'
+  stage: ${opt:stage, 'dev'}
   region: us-east-1
   environment:
-    ENV_STAGE: '${opt:stage}'
+    ENV_STAGE: ${opt:stage, 'dev'}
+    PGHOST: ${self:custom.dotenvVars.PGHOST, env:PGHOST, ''}
+    PGUSER: ${self:custom.dotenvVars.PGUSER, env:PGUSER, ''}
+    PGDATABASE: ${self:custom.dotenvVars.PGDATABASE, env:PGDATABASE, ''}
+    PGPASSWORD: ${self:custom.dotenvVars.PGPASSWORD, env:PGPASSWORD, ''}
+    PGPORT: ${self:custom.dotenvVars.PGPORT, env:PGPORT, ''}
 
 plugins:
   - serverless-webpack
@@ -16,6 +22,7 @@ custom:
   webpack:
     webpackConfig: 'webpack.config.js'
     includeModules: true
+    dotenvVars: ${file(configs.js)}
 
 functions:
   getProductById:
@@ -34,5 +41,19 @@ functions:
     events:
       - http:
           path: products
+          method: get
+          cors: true
+  createProduct:
+    handler: handler.createProduct
+    events:
+      - http:
+          path: products
+          method: post
+          cors: true
+  migrateSchema:
+    handler: handler.migrateSchema
+    events:
+      - http:
+          path: migrate
           method: get
           cors: true

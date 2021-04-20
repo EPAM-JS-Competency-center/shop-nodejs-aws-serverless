@@ -15,16 +15,5 @@
   "bugs": {
     "url": "https://github.com/EPAM-JS-Competency-center/shop-nodejs-aws-serverless/issues"
   },
-  "homepage": "https://github.com/EPAM-JS-Competency-center/shop-nodejs-aws-serverless#readme",
-  "dependencies": {
-    "inversify": "^5.0.5",
-    "pg": "^8.5.1",
-    "uuid": "^8.3.2",
-    "winston": "^3.3.3"
-  },
-  "devDependencies": {
-    "@types/node": "^14.14.37",
-    "@types/pg": "^7.14.11",
-    "@types/uuid": "^8.3.0"
-  }
+  "homepage": "https://github.com/EPAM-JS-Competency-center/shop-nodejs-aws-serverless#readme"
 }

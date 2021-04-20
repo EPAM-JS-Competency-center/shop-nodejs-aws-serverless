@@ -1,5 +1,5 @@
 import { ProductServiceInterface, ProductInterface } from './products';
-import products from './products.json';
+import products from './products-data.json';
 import { v4 as uuidv4 } from 'uuid';
 
 class InMemoryProductService implements ProductServiceInterface {

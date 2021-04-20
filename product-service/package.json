@@ -13,7 +13,10 @@
   "devDependencies": {
     "@types/aws-lambda": "^8.10.73",
     "@types/node": "^10.17.56",
+    "@types/pg": "^7.14.11",
     "@types/serverless": "^1.78.23",
+    "@types/uuid": "^8.3.0",
+    "dotenv": "^8.2.0",
     "fork-ts-checker-webpack-plugin": "^3.0.1",
     "serverless-webpack": "^5.4.0",
     "ts-loader": "^5.3.3",
@@ -25,6 +28,8 @@
   "author": "JSCC",
   "license": "MIT",
   "dependencies": {
+    "pg": "^8.6.0",
+    "uuid": "^8.3.2",
     "winston": "^3.3.3"
   }
 }
