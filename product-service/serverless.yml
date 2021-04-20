@@ -50,6 +50,9 @@ functions:
           path: products
           method: post
           cors: true
+          request:
+              schema:
+                application/json: ${file(src/schemas/createProductSchema.json)}
   migrateSchema:
     handler: handler.migrateSchema
     events:
