@@ -11,4 +11,3 @@ const productService = new PostgresProductService(databaseClient)
 export const getProductById = handlers.getProductByIdHandler(productService);
 export const getAllProducts = handlers.getAllProductsHandler(productService);
 export const createProduct = handlers.createProductHandler(productService);
-export const migrateSchema = handlers.migrateSchema(databaseClient);

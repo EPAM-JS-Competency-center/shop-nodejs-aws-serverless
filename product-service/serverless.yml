@@ -50,10 +50,3 @@ functions:
           path: products
           method: post
           cors: true
-  migrateSchema:
-    handler: handler.migrateSchema
-    events:
-      - http:
-          path: migrate
-          method: get
-          cors: true
