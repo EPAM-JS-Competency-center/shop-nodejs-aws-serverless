@@ -8,6 +8,8 @@ provider:
   runtime: nodejs12.x
   stage: ${opt:stage, 'dev'}
   region: us-east-1
+  environment:
+    SQS_URL: ${cf:product-service-dev.SQS_URL}
 
   iamRoleStatements:
     - Effect: "Allow"
