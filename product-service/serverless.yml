@@ -50,3 +50,6 @@ functions:
           path: products
           method: post
           cors: true
+          request:
+              schema:
+                application/json: ${file(src/schemas/createProductSchema.json)}
