@@ -14,6 +14,7 @@ provider:
     PGDATABASE: ${self:custom.dotenvVars.PGDATABASE, env:PGDATABASE, ''}
     PGPASSWORD: ${self:custom.dotenvVars.PGPASSWORD, env:PGPASSWORD, ''}
     PGPORT: ${self:custom.dotenvVars.PGPORT, env:PGPORT, ''}
+    SNS_ARN: !Ref createProductTopic
 
 plugins:
   - serverless-webpack
@@ -53,3 +54,37 @@ functions:
           request:
               schema:
                 application/json: ${file(src/schemas/createProductSchema.json)}
+  catalogBatchProcess:
+    handler: handler.catalogBatchProcess
+    events:
+      - sqs:
+          batchSize: 5
+          arn:
+            Fn::GetAtt: [catalogItemsQueue, Arn]
+
+resources:
+  Resources:
+    catalogItemsQueue:
+      Type: AWS::SQS::Queue
+      Properties:
+        QueueName: cvs-sqs
+    
+    createProductTopic:
+      Type: AWS::SNS::Topic
+      Properties:
+        TopicName: notify-about-products
+
+    # createProductTopicSubscription:
+    #   Type: AWS::SNS::Subscription
+    #   Properties:
+    #     Endpoint: some-test-email@gmail.com
+    #     Protocol: email
+    #     FilterPolicy:
+    #       title:
+    #         - "BMW 4-series"
+    #     TopicArn:
+    #       Ref: createProductTopic
+
+Outputs:
+  SQS_URL:
+    Value: !Ref catalogItemsQueue
