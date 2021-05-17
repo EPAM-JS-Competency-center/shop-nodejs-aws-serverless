@@ -1,9 +1,6 @@
+service: import-service
 frameworkVersion: '2'
 variablesResolutionMode: 20210219
-org: kmetto
-app: app2
-service: app2
-
 
 provider:
   name: aws
