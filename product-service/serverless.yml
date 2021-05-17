@@ -53,10 +53,3 @@ functions:
           request:
               schema:
                 application/json: ${file(src/schemas/createProductSchema.json)}
-  migrateSchema:
-    handler: handler.migrateSchema
-    events:
-      - http:
-          path: migrate
-          method: get
-          cors: true
