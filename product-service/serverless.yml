@@ -1,4 +1,4 @@
-service: import-service
+service: product-service
 frameworkVersion: '2'
 variablesResolutionMode: 20210219
 
