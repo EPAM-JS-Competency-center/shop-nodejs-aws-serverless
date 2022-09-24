@@ -6,7 +6,7 @@ provider:
   name: aws
   runtime: nodejs12.x
   stage: ${opt:stage, 'dev'}
-  region: us-east-1
+  region: us-west-2
   environment:
     ENV_STAGE: ${opt:stage, 'dev'}
     PGHOST: ${self:custom.dotenvVars.PGHOST, env:PGHOST, ''}
@@ -51,5 +51,5 @@ functions:
           method: post
           cors: true
           request:
-              schema:
-                application/json: ${file(src/schemas/createProductSchema.json)}
+            schema:
+              application/json: ${file(src/schemas/createProductSchema.json)}
