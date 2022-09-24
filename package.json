@@ -1,19 +1,16 @@
 {
-  "name": "shop-nodejs-aws-serverless",
+  "name": "rolling-scopes-node-js-in-aws-online-shop-backend",
   "version": "1.0.0",
-  "description": "Backend for E-Commerce application (Shop) created with NodeJS, AWS Cloud and Serverless architecture and Serverless framework",
+  "description": "Serverless backend for online shop application",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EPAM-JS-Competency-center/shop-nodejs-aws-serverless.git"
+    "url": "https://github.com/nhantran3395/rolling-scopes-nodejs-in-aws-online-shop-backend"
   },
-  "author": "",
+  "author": "NhanTran",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/EPAM-JS-Competency-center/shop-nodejs-aws-serverless/issues"
-  },
-  "homepage": "https://github.com/EPAM-JS-Competency-center/shop-nodejs-aws-serverless#readme"
+  "homepage": "https://github.com/nhantran3395/rolling-scopes-nodejs-in-aws-online-shop-backend#readme"
 }

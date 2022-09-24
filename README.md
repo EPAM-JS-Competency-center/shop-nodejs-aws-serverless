@@ -1,2 +1,3 @@
-# shop-nodejs-aws-serverless
-Backend for E-Commerce application (Shop) created with NodeJS, AWS Cloud and Serverless architecture and Serverless framework
+# Rolling Scopes Node JS in AWS Online Shop Backend
+
+Serverless backend for Online shop application
